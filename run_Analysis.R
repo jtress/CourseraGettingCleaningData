@@ -12,7 +12,7 @@ index_col_names <- grepl("mean()", col_names) | grepl("std()", col_names) |
         grepl("Mean", col_names)
 
 
-# Read the "X_train.txt" and "Y_test.txt" data sets in setting the column names
+# Read the "X_train.txt" and "X_test.txt" data sets in setting the column names
 # with the vector created earlier. Then combine rows into one data frame.
 x_train <- read.csv("UCI HAR Dataset//train//X_train.txt", header = FALSE,
                     sep = "", col.names = col_names)
